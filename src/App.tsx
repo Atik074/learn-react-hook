@@ -9,10 +9,8 @@ function App() {
   return (
     <>
          <Test></Test>
-
-         <div style={{border:'2px solid red' , padding:'15px' , margin:'15px'}}>
           <UseReducerExample/>
-         </div>
+        
     </>
   )
 }
