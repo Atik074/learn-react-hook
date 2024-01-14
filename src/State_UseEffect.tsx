@@ -11,6 +11,7 @@ const State_UseEffect = () => {
 
     return (
         <div>
+            <h2>useEffect and clean up part 01</h2>
          <button onClick={()=>setHidden((prev)=> !prev)}>Click</button>
         </div>
     );

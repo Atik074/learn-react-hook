@@ -53,7 +53,7 @@ const UseReducerExample = () => {
 
             <button onClick={()=>dispatch({type:"incrementByThree" , payload:4})}>IncrementByFour</button>
         </div> */}
-
+           <h3>use reducer with payload</h3>
   {/* use reeducer  */}
         <form onSubmit={ handleSubmitForm}>
      <input 
