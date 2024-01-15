@@ -3,8 +3,10 @@ import React  from 'react'
 import './App.css'
 import Test from './Test'
 import UseReducerExample from './UseReducerExample'
-import State_UseEffect from './state_UseEffect'
 import CleanUp from './CleanUp'
+import State_UseEffect from './State_UseEffect'
+import UseRefExam from './UseRefExam'
+import CustomInput from './Component/CustomInput'
 
 function App() {
 
@@ -13,8 +15,9 @@ function App() {
          <Test></Test> <hr />
           <UseReducerExample/> <hr />
           <State_UseEffect/> <hr />
-          <CleanUp/>
-        
+          <CleanUp/> 
+          <UseRefExam/> 
+      
     </>
   )
 }
