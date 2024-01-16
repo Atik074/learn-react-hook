@@ -13,8 +13,8 @@
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "nodemon": "^3.0.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.6",
+    "react-dom": "^22.21",
     "react-router-dom": "^6.21.2",
     "sort-by": "^1.2.0"
   },

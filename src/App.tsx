@@ -1,24 +1,34 @@
 
-import React  from 'react'
+import React, { useContext }  from 'react'
 import './App.css'
 import Test from './Test'
 import UseReducerExample from './UseReducerExample'
 import CleanUp from './CleanUp'
 import State_UseEffect from './State_UseEffect'
 import UseRefExam from './UseRefExam'
-import CustomInput from './Component/CustomInput'
+import { ThemeContext, TthemeContext } from './Context/ThemeProvider'
 
 function App() {
+  const {dark , setDark} = useContext(ThemeContext) as TthemeContext;
+   console.log(dark)
 
   return (
-    <>
-         <Test></Test> <hr />
+    <div    className={`${dark ? "bgBlack" : "bgWhite"}`}>
+          <Test></Test> <hr />
           <UseReducerExample/> <hr />
           <State_UseEffect/> <hr />
           <CleanUp/> 
-          <UseRefExam/> 
+          <UseRefExam/>  
+
+        
+           <button
+        
+           style={{marginTop:'15px'}}
+           onClick={()=>setDark(!dark)}
+           >changeTheme</button>    
+         
       
-    </>
+    </div>
   )
 }
 
