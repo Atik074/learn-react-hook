@@ -9,6 +9,7 @@ import UseRefExam from './UseRefExam'
 import { ThemeContext, TthemeContext } from './Context/ThemeProvider'
 import Profile from './Pages/HookPages/Profile'
 import GamesResult from './Pages/HookPages/GamesResult'
+import UsersContainer from './UsersContainer'
 
 function App() {
   const {dark , setDark} = useContext(ThemeContext) as TthemeContext;
@@ -33,6 +34,9 @@ function App() {
 
            {/* <Profile/> */}
            <GamesResult/>
+           <hr></hr>
+
+           <UsersContainer/>
              
          
       
