@@ -7,6 +7,8 @@ import CleanUp from './CleanUp'
 import State_UseEffect from './State_UseEffect'
 import UseRefExam from './UseRefExam'
 import { ThemeContext, TthemeContext } from './Context/ThemeProvider'
+import Profile from './Pages/HookPages/Profile'
+import GamesResult from './Pages/HookPages/GamesResult'
 
 function App() {
   const {dark , setDark} = useContext(ThemeContext) as TthemeContext;
@@ -25,7 +27,13 @@ function App() {
         
            style={{marginTop:'15px'}}
            onClick={()=>setDark(!dark)}
-           >changeTheme</button>    
+           >changeTheme</button> 
+
+           <hr></hr>
+
+           {/* <Profile/> */}
+           <GamesResult/>
+             
          
       
     </div>
