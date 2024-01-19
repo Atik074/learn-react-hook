@@ -29,7 +29,7 @@ const SelectOption = ({value , children})=>{
     const context = useContext(selectContext)
 
     if(!context){
-        throw new  Error("context out of bind")
+        throw new  Error("context out of bound")
     }
 
     return context  ;
