@@ -7,9 +7,9 @@ import CleanUp from './CleanUp'
 import State_UseEffect from './State_UseEffect'
 import UseRefExam from './UseRefExam'
 import { ThemeContext, TthemeContext } from './Context/ThemeProvider'
-import Profile from './Pages/HookPages/Profile'
 import GamesResult from './Pages/HookPages/GamesResult'
-import UsersContainer from './UsersContainer'
+import UsersContainer from './usersContainer'
+import Select from './CompoundComponent/Select'
 
 function App() {
   const {dark , setDark} = useContext(ThemeContext) as TthemeContext;
@@ -37,7 +37,14 @@ function App() {
            <hr></hr>
 
            <UsersContainer/>
-             
+
+           <hr/>
+          <Select>
+             <Select.SelectOption value='option 01'>option 1</Select.SelectOption>
+             <Select.SelectOption value='option 02'>option 2</Select.SelectOption>
+             <Select.SelectOption value='option 03'>option 3</Select.SelectOption>
+             <Select.SelectOption value='option 04'>option 4</Select.SelectOption>
+          </Select>
          
       
     </div>

@@ -7,6 +7,7 @@ const UserList = ({isLoading, error ,data}) => {
     }
 
     if(error){
+        console.log(error)
         return <p>Something Went Wrong</p>
     }
     return (
